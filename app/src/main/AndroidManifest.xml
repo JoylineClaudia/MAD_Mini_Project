@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mad_mini_project" >
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission-sdk-23 android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MAD_Mini_Project" >
+        <activity
+            android:name=".SecondActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DisplayActivity"
+            android:exported="false" />
+        <!--
+             TODO: Before you run your application, you need a Google Maps API key.
+
+             To get one, follow the directions here:
+
+                https://developers.google.com/maps/documentation/android-sdk/get-api-key
+
+             Once you have your API key (it starts with "AIza"), define a new property in your
+             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
+             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBGcN3BRy2m6e9G2SGc4x0EsDwICOqaquc" />
+
+        <activity
+            android:name=".MapsActivityDriver"
+            android:exported="false"
+            android:label="@string/title_activity_maps_driver" />
+        <activity
+            android:name=".ViewDriverActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddDriverActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminAllActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StudentHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StudentLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StudentRegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DriverActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StudentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/optHome"
+        android:title="Home"
+        android:icon="@drawable/ic_baseline_home_24"/>
+
+    <item
+        android:id="@+id/optAddBus"
+        android:title="Add Bus"
+        android:icon="@drawable/ic_baseline_directions_bus_24"/>
+
+    <item
+        android:id="@+id/optAddStudentToBus"
+        android:title="Add Student to Bus"
+        android:icon="@drawable/ic_baseline_supervised_user_circle_24"/>
+
+    <item
+        android:id="@+id/optViewBus"
+        android:title="ViewBus"
+        android:icon="@drawable/ic_baseline_directions_bus_24"/>
+
+    <item
+        android:id="@+id/optAddStop"
+        android:title="AddStop"
+        android:icon="@drawable/ic_baseline_airline_stops_24"/>
+
+    <item
+        android:id="@+id/optAdminLogout"
+        android:title="Logout"
+        android:icon="@drawable/ic_baseline_login_24"/>
+
+</menu>

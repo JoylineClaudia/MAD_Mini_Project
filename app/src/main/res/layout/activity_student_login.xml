@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".StudentLoginActivity"
+android:background="@drawable/bus3">
+<View
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8F000000"/>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:layout_editor_absoluteX="26dp"
+    tools:layout_editor_absoluteY="-16dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/StudentRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="76dp"
+            android:fontFamily="@font/aldrich"
+            android:text="Student Login"
+            android:textColor="@color/white"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/StudentEmail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/input_bg"
+            android:drawableLeft="@drawable/ic_baseline_email_24"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="20dp"
+            android:paddingTop="13dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="13dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/StudentRegister" />
+
+
+        <EditText
+            android:id="@+id/StudentPassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/input_bg"
+            android:drawableLeft="@drawable/ic_baseline_security_24"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingLeft="20dp"
+            android:paddingTop="13dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="13dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/StudentEmail"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/StudentEmail"
+            app:layout_constraintTop_toBottomOf="@+id/StudentEmail" />
+
+        <Button
+            android:id="@+id/btnStudentLogin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/input_bg"
+            android:text="Login"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/StudentPassword"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/StudentPassword"
+            app:layout_constraintTop_toBottomOf="@+id/StudentPassword" />
+
+        <TextView
+            android:id="@+id/CreateNewAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Create new account? Register →"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/btnStudentLogin"
+            app:layout_constraintHorizontal_bias="0.425"
+            app:layout_constraintStart_toStartOf="@+id/btnStudentLogin"
+            app:layout_constraintTop_toBottomOf="@+id/btnStudentLogin" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
